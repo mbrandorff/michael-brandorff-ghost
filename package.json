@@ -1,0 +1,26 @@
+{
+    "name": "twsf",
+    "description": "A WIP Ghost Theme for my Blog.",
+    "version": "0.0.1",
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "author": {
+        "name": "Michael Brandorff",
+        "email": "hello@michael-brandorff.de",
+        "url": "http://michael-brandorff.de"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Photography"
+        ]
+    },
+    "devDependencies": {
+        
+    },
+    "config": {
+        "posts_per_page": 8
+    }
+}
