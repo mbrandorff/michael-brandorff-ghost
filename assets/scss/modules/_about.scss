@@ -1,14 +1,25 @@
+.about {
+	text-align: center;
+}
+.about-bio p {
+	margin: 0.5em auto 1.5em;
+	max-width: 475px;
+
+	font-size: 0.9em;
+
+	a {
+		@extend .linkhover;
+	}
+}
 .about-insta {
 	text-align: center;
 
 	h3 {
-		margin: 0;
-
-		text-transform: uppercase;
-		font-weight: normal;
-		font-size: 1.6em;
+		margin: 2em 0 0;
 	}
 	p {
-		margin: 1.3em 0 1.5em;
+		margin: 0.5em 0 1.3em;
+
+		font-size: 0.9em;
 	}
 }

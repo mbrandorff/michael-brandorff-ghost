@@ -3,7 +3,7 @@
     {{navigation}}
 </header>
 
-<main class="site-main">
+<main class="site-main home">
 
     {{#foreach posts}}
     <article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
@@ -43,12 +43,15 @@
     <article class="site-cblock about" id="about">
         <div class="site-cblock-content about-content">
             
-            <header class="about-header">
-                <h2 class="about-title">About me</h2>
-            </header>
-            <section class="about-bio">
-                <p>A couple of words about me.</p>
-            </section>
+            {{#get "posts" slug="home" as |post|}}
+                {{#post}}
+                <section class="about-bio">
+
+                    {{content}}
+
+                </section>
+                {{/post}}
+            {{/get}}
             <section class="about-insta">
                 <div class="description">
                     <h3>Instagram</h3>

@@ -23,14 +23,17 @@ html, body {
 	width: 50%;
 	overflow: hidden;
 	padding: 1em;
+
+	text-align: center;
 }
 .site-cblock-content {
 	position: relative;
 	z-index: 3;
 }
 
-.site-footer {
+.site-pagination {
 	text-align: center;
+	text-transform: uppercase;
 	
 	.pagination {
 		position: relative;
@@ -38,7 +41,7 @@ html, body {
 
 		.page-number {
 			display: block;
-			padding: 0 1em 1em;
+			padding: 0 1em 0.5em;
 		}
 	}
 	.older-posts, .newer-posts {
@@ -53,5 +56,27 @@ html, body {
 		left: 100%;
 		text-align: left;
 		right: auto;
+	}
+}
+
+.site-footer {
+	padding: 0;
+
+	text-align: center;
+	color: #333;
+
+	a {
+		padding: 0 0.5em;
+		color: #333;
+		text-decoration: none;
+		font-size: 0.8em;
+		line-height: 1;
+
+		transition: all 250ms;
+	}
+
+	a:hover {
+		color: $color;
+		text-decoration: none;
 	}
 }

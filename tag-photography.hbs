@@ -3,7 +3,7 @@
     {{navigation}}
 </header>
 
-<main class="site-main">
+<main class="site-main photography">
 
     {{#foreach posts}}
 
@@ -41,18 +41,17 @@
     </article>
 
     {{#if @first}}
-    <article class="about">
-        <div class="about-content">
-            
-            <header class="about-header">
-                <h2 class="about-title">This is an archive</h2>
-            </header>
+    <article class="site-cblock">
+        <div class="site-cblock-content">
+        {{#get "posts" slug="photography" as |post|}}
+            {{#post}}
             <section class="about-bio">
-                <p>A couple of words about me.</p>
+
+                {{content}}
+
             </section>
-            <section class="about-insta">
-                Instagram Feed
-            </section>
+            {{/post}}
+        {{/get}}
         </div>
     </article>
     {{/if}}
