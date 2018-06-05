@@ -1,0 +1,14 @@
+.instafeed {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: middle;
+	align-items: center;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.instafeed a {
+	display: block;
+	padding: 0.25em;
+
+	text-align: center;
+}

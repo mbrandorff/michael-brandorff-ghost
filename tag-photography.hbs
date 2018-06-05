@@ -6,6 +6,7 @@
 <main class="site-main">
 
     {{#foreach posts}}
+
     <article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
         <div class="post-card-content">
 
@@ -18,7 +19,7 @@
             <header class="post-card-header">
                 <h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
             </header>
-
+            
             <section class="post-card-excerpt">
                 {{excerpt words="33"}}
             </section>
@@ -40,34 +41,18 @@
     </article>
 
     {{#if @first}}
-    <article class="site-cblock about" id="about">
-        <div class="site-cblock-content about-content">
+    <article class="about">
+        <div class="about-content">
             
             <header class="about-header">
-                <h2 class="about-title">About me</h2>
+                <h2 class="about-title">This is an archive</h2>
             </header>
             <section class="about-bio">
                 <p>A couple of words about me.</p>
             </section>
             <section class="about-insta">
-                <div class="description">
-                    <h3>Instagram</h3>
-                    <p><a class="linkhover" href="https://www.instagram.com/travellingwithsandyfeet/">@travellingwithsandyfeet</a> / <a class="linkhover" href="https://www.instagram.com/explore/tags/travellingwithsandyfeet/">#travellingwithsandyfeet</a></p>
-                </div>
-                <div id="instafeed" class="instafeed">
-
-                </div>
-                <script type="text/javascript">
-                var feed = new Instafeed({
-                    get: 'user',
-                    userId: '254974762',
-                    accessToken: '254974762.1677ed0.46fc2d80728b408babdbe0f3f82e69c2',
-                    limit: '6'
-                });
-                feed.run();
-                </script>
+                Instagram Feed
             </section>
-
         </div>
     </article>
     {{/if}}

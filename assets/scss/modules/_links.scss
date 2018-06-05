@@ -1,0 +1,54 @@
+$color: #FFD228;
+
+.linkhover {
+  position:relative;
+
+  font-size: 1em;
+  color: $color;
+  text-decoration:none;
+
+  transition: all .2s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+
+    background: $color;
+
+    transition:all .2s;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover::before {
+    width: 100%;
+    left:0%;
+  }
+}
+
+.linkhover--small {
+  @extend .linkhover;
+
+  font-size: 1em;
+}
+
+.linkhover--dark {
+  @extend .linkhover;
+
+  color: #333;
+
+  &::before {
+    background: #333;
+  }
+}
+
+.site-main--post a, 
+.site-footer a {
+  @extend .linkhover;
+}
