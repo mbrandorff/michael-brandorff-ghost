@@ -13,17 +13,16 @@
         </a>
         {{/if}}
         <div class="post-card-content">
-            <a class="post-card-content-link" href="{{url}}">
-                <header class="post-card-header">
-                    {{#if primary_tag}}
-                        <span class="post-card-tags">{{primary_tag.name}}</span>
-                    {{/if}}
-                    <h2 class="post-card-title">{{title}}</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    <p>{{excerpt words="33"}}</p>
-                </section>
-            </a>
+            <header class="post-card-header">
+                {{#if primary_tag}}
+                    <span class="post-card-tags">{{primary_tag.name}}</span>
+                {{/if}}
+                <h2 class="post-card-title"><a class="post-card-content-link" href="{{url}}">{{title}}</a></h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>{{excerpt words="33"}}</p>
+            </section>
+            
             <footer class="post-card-meta">
 
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
@@ -50,7 +49,4 @@
     </article>
     {{/foreach}}
 
-    {{#if pagination}}
-    {{{pagination}}}
-    {{/if}}
 </main>

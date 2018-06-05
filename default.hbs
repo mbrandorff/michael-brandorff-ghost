@@ -13,6 +13,9 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -20,17 +23,17 @@
 </head>
 <body class="{{body_class}}">
 
-    <div class="site-wrapper">
 
-        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
-        {{{body}}}
-        
-        {{!-- The footer at the very bottom of the screen --}}
-        <footer>
-            
-        </footer>
+    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+    {{{body}}}
+    
+    {{!-- The footer at the very bottom of the screen --}}
+    <footer class="site-footer">
+        {{#if pagination}}
+        {{{pagination}}}
+        {{/if}}
+    </footer>
 
-    </div>
 
     {{!-- The big email subscribe modal content --}}
     {{#if @labs.subscribers}}
@@ -53,16 +56,6 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
-
-    {{#if pagination.pages}}
-    <script>
-        // maxPages is a global variable that is needed to determine
-        // if we need to load more pages for the infinitescroll, or if
-        // we reached the last page already.
-        var maxPages = parseInt('{{pagination.pages}}');
-    </script>
-    
-    {{/if}}
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}

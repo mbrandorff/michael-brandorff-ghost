@@ -1,1 +1,15 @@
+$c-selection: #95D4FF;
+$c-mark: #fdffb6;
+$c-hr: #c5d2d9;
+$c-dt: #15171A;
+$c-blockquote: #e5eff5;
+$c-a: #3eb0ef;
+
+$c-site-font: #333;
+$c-site-background: #fff;
+
 @import "global";
+
+@import "layout";
+
+@import "modules/navigation";

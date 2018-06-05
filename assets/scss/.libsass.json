@@ -1,10 +1,10 @@
 {
     "output": {
         "dir": "../css",      // Relative or absolute path (can have ..)
-        "structure": "nested"       // "flat", "nested", or ["nested", "relative/root/of/nest"]
+        "structure": "flat"       // "flat", "nested", or ["nested", "relative/root/of/nest"]
     },
     "compile": {
-        "style": false,             // String | Output style: nested/expanded/compact/compressed
+        "style": "compressed",             // String | Output style: nested/expanded/compact/compressed
         "line-numbers": false,      // Bool   | Emit comments showing original line numbers
         "line-comments": false,     // Bool   | Alias for line-numbers, does not override
         "load-path": false,         // List   | Sass import paths: e.g. [ "C:\bourbon", "C:\compass" ]
