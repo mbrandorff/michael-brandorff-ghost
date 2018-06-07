@@ -47,6 +47,7 @@
 }
 
 .site-main--post a,
-.site-pagination a {
+.site-pagination a,
+.kg-card-markdown a {
   @extend .linkhover;
 }

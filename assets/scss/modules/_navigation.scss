@@ -16,6 +16,10 @@
 		list-style: none;
 		line-height: 1em;
 
+		&.nav-current a {
+			color: $color;
+		}
+
 		a {
 			display: block;
 			color: #333;
@@ -27,4 +31,12 @@
 			}
 		}
 	}
+}
+
+.site-main,
+.site-header,
+.site-footer,
+.site-pagination {
+	max-width: 1920px;
+	margin: 0 auto;
 }

@@ -8,22 +8,23 @@
     {{#foreach posts}}
 
     {{#if @first}}
-    <article class="site-cblock">
+    <article class="site-cblock cblock-travel">
         <div class="site-cblock-content">
-            
-            <header class="about-header">
-                <h2 class="about-title">This is an archive</h2>
-            </header>
-            <section class="about-bio">
-                <p>for a specific tag called travel</p>
+        {{#get "posts" slug="travel" as |post|}}
+            {{#post}}
+            <section class="travel-bio">
+
+                {{content}}
+
             </section>
-            <section class="about-insta">
-                I could add my map on here on the travel site
-            </section>
+            {{/post}}
+        {{/get}}
         </div>
     </article>
-    {{/if}}
 
+    <h3 class="travel-recent" id="recent-posts">Travel Logs and Photos</h3>
+    {{/if}}
+    
     <article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
         <div class="post-card-content">
 
@@ -59,3 +60,8 @@
 
     {{/foreach}}
 </main>
+
+{{#contentFor "scripts"}}
+    <script src="{{asset "js/mapdata.js"}}"></script>
+    <script src="{{asset "js/worldmap.js"}}"></script>
+{{/contentFor}}

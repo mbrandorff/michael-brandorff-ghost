@@ -15,7 +15,14 @@ $color: #FFD228;
 @import "layout";
 
 @import "modules/about";
+@import "modules/travel";
+
 @import "modules/post-card";
+
 @import "modules/links";
 @import "modules/navigation";
 @import "modules/instafeed";
+
+#map_inner > div:not(#tt_sm_map) {
+	opacity: 0;
+}

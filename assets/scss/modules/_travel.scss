@@ -1,0 +1,20 @@
+.travel {
+	.site-cblock {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 0 0 100%;
+		min-height: calc(100vh - 2em);
+	}
+
+	.site-cblock-content {
+		flex: 0 0 100%;
+	}
+
+	.travel-recent {
+		width: 100%;
+
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

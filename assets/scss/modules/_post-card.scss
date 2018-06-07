@@ -4,8 +4,6 @@
 	overflow: hidden;
 	padding: 1em;
 
-	background: grey;
-
 	&::before {
 		content: "";
 		position: absolute;
@@ -226,25 +224,28 @@ h2.post-card-title {
 
 .post-card {
 	height: 90vh;
+	flex: 1 1 50%;
 }
 .post-card-photo {
 	height: 90vh;
 }
-.home .post-card.post-0 {
-	height: calc(100vh - 2em);
-	width: 100%;
 
-	background: lightgrey;
+.home {
+	.post-card.post-0 {
+		height: calc(100vh - 2em);
+		flex: 1 1 100%;
 
-	.post-card-photo {
-		height: 100vh;
+		.post-card-photo {
+			height: 100vh;
+		}
 	}
-}
-.home .post-card.post-2, .post-card.post-5 {
-	width: 100%;
-	height: 130vh;
-
-	.post-card-photo {
+	.post-card.post-2, 
+	.post-card.post-5 {
+		flex: 1 1 100%;
 		height: 130vh;
+
+		.post-card-photo {
+			height: 130vh;
+		}
 	}
 }
