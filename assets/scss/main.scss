@@ -1,14 +1,14 @@
-$c-selection: #95D4FF;
+$color: #FFD228;
+
+$c-selection: #FFD228;
 $c-mark: #fdffb6;
 $c-hr: #c5d2d9;
 $c-dt: #15171A;
-$c-blockquote: #e5eff5;
+$c-blockquote: #FFD228;
 $c-a: #3eb0ef;
 
 $c-site-font: #333;
 $c-site-background: #fff;
-
-$color: #FFD228;
 
 @import "global";
 
@@ -16,12 +16,16 @@ $color: #FFD228;
 
 @import "modules/about";
 @import "modules/travel";
+@import "modules/photography";
+@import "modules/post";
 
 @import "modules/post-card";
 
 @import "modules/links";
 @import "modules/navigation";
 @import "modules/instafeed";
+
+@import "queries";
 
 #map_inner > div:not(#tt_sm_map) {
 	opacity: 0;

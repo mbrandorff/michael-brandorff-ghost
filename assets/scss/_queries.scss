@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1150px) {
+	.home {
+		.site-cblock {
+			flex: 0 0 100%;
+		}
+	}
+	.post-card-header, .post-timestamp {
+		font-size: 0.8em;
+	}
+	.post-card-excerpt {
+		font-size: 0.9em;
+		top: 2em;
+	}
+}
+@media only screen and (max-width: 875px) {
+	.post-card, .site-cblock, .photography .site-cblock {
+		flex: 0 0 100%;
+	}
+	.photography .post-card {
+		order: 2;
+	}
+	.photography .site-cblock {
+		order: 1;
+	}
+	h2.post-card-title {
+		padding: 1em 0.5em;
+	}
+}
+@media only screen and (max-width: 565px) {
+	.post-card-header, .post-timestamp {
+		font-size: 0.6em;
+	}
+	.post-card-excerpt {
+		font-size: 0.7em;
+		top: 2em;
+	}
+}

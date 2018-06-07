@@ -148,7 +148,7 @@ h2.post-card-title {
 		background: #000;
 		content: '';
 		transition: opacity 0.35s;
-		box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
 	}
 }
 
@@ -220,6 +220,14 @@ h2.post-card-title {
 		transform: scale3d(1,1,1);
 	}
 }
+.postpage .post-card-header:hover {
+	~ .post-card-photo {
+		transform: perspective(1000px) translate3d(0,0,0);
+	}
+	.post-card-title::before {
+		opacity: 1;
+	}
+}
 
 
 .post-card {
@@ -228,24 +236,4 @@ h2.post-card-title {
 }
 .post-card-photo {
 	height: 90vh;
-}
-
-.home {
-	.post-card.post-0 {
-		height: calc(100vh - 2em);
-		flex: 1 1 100%;
-
-		.post-card-photo {
-			height: 100vh;
-		}
-	}
-	.post-card.post-2, 
-	.post-card.post-5 {
-		flex: 1 1 100%;
-		height: 130vh;
-
-		.post-card-photo {
-			height: 130vh;
-		}
-	}
 }

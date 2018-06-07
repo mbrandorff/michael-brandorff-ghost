@@ -80,3 +80,16 @@ html, body {
 		text-decoration: none;
 	}
 }
+
+.site-main,
+.site-header,
+.site-footer,
+.site-pagination {
+	max-width: 1920px;
+	padding: 0 1em;
+	margin: 0 auto;
+}
+
+.flex-fullwidth {
+	flex: 0 0 100% !important;
+}

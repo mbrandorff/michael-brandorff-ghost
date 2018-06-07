@@ -7,6 +7,8 @@
 
   transition: all .2s;
 
+  white-space: nowrap;
+
   &::before {
     content: '';
     position: absolute;

@@ -1,44 +1,44 @@
 {{!< default}}
 <header class="site-header">
-    {{navigation}}
+	{{navigation}}
 </header>
 
 <main class="site-main">
 
-    {{#foreach posts}}
+	{{#foreach posts}}
 
-    <article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
-        <div class="post-card-content">
+	<article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+		<div class="post-card-content">
 
-            <div class="post-timestamp">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-                    <p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
-                </time>
-            </div>
+			<div class="post-timestamp">
+				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+					<p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
+				</time>
+			</div>
 
-            <header class="post-card-header">
-                <h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
-            </header>
-            
-            <section class="post-card-excerpt">
-                {{excerpt words="33"}}
-            </section>
+			<header class="post-card-header">
+				<h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
+			</header>
+			
+			<section class="post-card-excerpt">
+				{{excerpt words="33"}}
+			</section>
 
-            {{#if feature_image}}
-            <img class="post-card-photo" src="{{feature_image}}">
-            {{/if}}
-            
-            <footer class="post-card-meta">
+			{{#if feature_image}}
+			<img class="post-card-photo" src="{{feature_image}}">
+			{{/if}}
+			
+			<footer class="post-card-meta">
 
-                {{#if primary_tag}}
-                    <span class="post-tag"><i class="fas fa-tags"></i> {{primary_tag.name}}</span>
-                {{/if}}
+				{{#if primary_tag}}
+					<span class="post-tag"><i class="fas fa-tags"></i> {{primary_tag.name}}</span>
+				{{/if}}
 
-                <span class="post-reading-time"><i class="fas fa-stopwatch"></i> {{reading_time minute="1 min" minutes="% min"}}</span>
+				<span class="post-reading-time"><i class="fas fa-stopwatch"></i> {{reading_time minute="1 min" minutes="% min"}}</span>
 
-            </footer>
-        </div>
-    </article>
+			</footer>
+		</div>
+	</article>
 
-    {{/foreach}}
+	{{/foreach}}
 </main>

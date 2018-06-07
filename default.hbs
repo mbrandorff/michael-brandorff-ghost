@@ -2,71 +2,71 @@
 <html lang="{{lang}}">
 <head>
 
-    {{!-- Document Settings --}}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	{{!-- Document Settings --}}
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    {{!-- Base Meta --}}
-    <title>{{meta_title}}</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{{!-- Base Meta --}}
+	<title>{{meta_title}}</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{!-- Styles'n'Scripts --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+	{{!-- Styles'n'Scripts --}}
+	<link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
-    <script src="{{asset "js/instafeed.js"}}"></script>
+	<script src="{{asset "js/instafeed.js"}}"></script>
 
-    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
-    {{ghost_head}}
+	{{!-- This tag outputs SEO meta+structured data and other important settings --}}
+	{{ghost_head}}
 
 </head>
 <body class="{{body_class}}">
 
-    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
-    {{{body}}}
-    
-    {{!-- The footer at the very bottom of the screen --}}
-    <div class="site-pagination">
-        {{#if pagination}}
-        {{{pagination}}}
-        {{/if}}
-    </div>
+	{{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+	{{{body}}}
+	
+	{{!-- The footer at the very bottom of the screen --}}
+	<div class="site-pagination">
+		{{#if pagination}}
+		{{{pagination}}}
+		{{/if}}
+	</div>
 
-    <footer class="site-footer">
-        <a href="/impressum/">Impressum</a> | <a href="/data-protection-policy/">Data Protection Policy</a>
-    </footer>
+	<footer class="site-footer">
+		<a href="/impressum/">Impressum</a> | <a href="/data-protection-policy/">Data Protection Policy</a>
+	</footer>
 
 
-    {{!-- The big email subscribe modal content --}}
-    {{#if @labs.subscribers}}
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="#"></a>
-        <div class="subscribe-overlay-content">
-            {{#if @blog.logo}}
-                <img class="subscribe-overlay-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-            {{/if}}
-            <h1 class="subscribe-overlay-title">Subscribe to {{@blog.title}}</h1>
-            <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-            {{subscribe_form placeholder="youremail@example.com"}}
-        </div>
-    </div>
-    {{/if}}
+	{{!-- The big email subscribe modal content --}}
+	{{#if @labs.subscribers}}
+	<div id="subscribe" class="subscribe-overlay">
+		<a class="subscribe-overlay-close" href="#"></a>
+		<div class="subscribe-overlay-content">
+			{{#if @blog.logo}}
+				<img class="subscribe-overlay-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+			{{/if}}
+			<h1 class="subscribe-overlay-title">Subscribe to {{@blog.title}}</h1>
+			<p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+			{{subscribe_form placeholder="youremail@example.com"}}
+		</div>
+	</div>
+	{{/if}}
 
-    {{!-- jQuery --}}
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
+	{{!-- jQuery --}}
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
 
-    {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
-    {{{block "scripts"}}}
+	{{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
+	{{{block "scripts"}}}
 
-    {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
-    {{ghost_foot}}
+	{{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
+	{{ghost_foot}}
 
 </body>
 </html>
