@@ -16,6 +16,13 @@
 	.post-card, .site-cblock, .photography .site-cblock {
 		flex: 0 0 100%;
 	}
+	.home .site-cblock {
+		min-height: 90vh;
+		height: auto;
+	}
+	.site-main {
+		padding: 0;
+	}
 	.photography .post-card {
 		order: 2;
 	}
