@@ -249,8 +249,7 @@ var simplemaps_worldmap_mapdata={
     },
     EG: {
       inactive: "no",
-      name: "Egypt",
-      color: "#FFD228"
+      name: "Egypt"
     },
     ER: {
       inactive: "no",
@@ -951,48 +950,32 @@ var simplemaps_worldmap_mapdata={
     "0": {
       lat: 42.545,
       lng: 1.576,
-      name: "Andorra"
+      name: "Andorra",
+      url: "/andorra-17/"
     },
     "1": {
       lat: -31.953,
       lng: 115.857,
-      name: "West Coast"
+      name: "West Coast",
+      url: "/australia-14-west-coast/"
     },
     "2": {
-      lat: -33.87,
-      lng: 151.207,
-      name: "East Coast"
+      lat: 47.268,
+      lng: 11.391,
+      name: "Austria",
+      url: "/austria-17/"
     },
     "3": {
       lat: -37.818,
       lng: 144.967,
-      name: "South Coast"
+      name: "South Coast",
+      url: "/australia-14-south-coast/"
     },
     "4": {
       lat: -23.703,
       lng: 133.881,
-      name: "Outback"
-    },
-    "5": {
-      lat: -34.016,
-      lng: 23.906,
-      name: "Garden Route"
-    },
-    "6": {
-      lat: -31.567,
-      lng: 28.767,
-      name: "Wild Coast & Lesotho"
-    },
-    "8": {
-      lat: -25.044,
-      lng: 31.129,
-      name: "Kruger National Park"
-    },
-    "9": {
-      lat: 39.360,
-      lng: -9.387,
-      name: "Portugal",
-      description: "2 Posts"
+      name: "Outback",
+      url: "/australia-14-outback/"
     }
   },
   labels: {},
