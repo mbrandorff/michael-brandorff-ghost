@@ -23,9 +23,13 @@
 		}
 	}
 	.post-content {
-		max-width: 900px;
 		width: 100%;
 		padding: 1rem;
+
+		.kg-card-markdown {
+			max-width: 900px;
+			margin: 0 auto;
+		}
 
 		h1, h2, h3, h4, h5, h6, p, figure {
 			padding: 0 3rem;
