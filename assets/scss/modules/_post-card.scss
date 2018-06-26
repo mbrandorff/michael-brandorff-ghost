@@ -2,7 +2,7 @@
 	position: relative;
 	width: 50%;
 	overflow: hidden;
-	padding: 1em;
+	padding: 1rem;
 
 	&::before {
 		content: "";
@@ -28,7 +28,7 @@
 		height: 100%;
 		z-index: 4;
 
-		border: 1em solid #fff;
+		border: 1rem solid #fff;
 
 		transition: all 250ms;
 	}
@@ -222,13 +222,20 @@ h2.post-card-title {
 }
 .postpage .post-card-header:hover {
 	~ .post-card-photo {
-		transform: perspective(1000px) translate3d(0,0,0);
+		transform: perspective(1000px) translate3d(0,0,0px);
 	}
 	.post-card-title::before {
 		opacity: 1;
 	}
 }
+.postpage .post-card {
+	height: 80vh;
+	overflow: visible;
 
+	.post-card-content {
+		overflow: hidden;
+	}
+}
 
 .post-card {
 	height: 90vh;

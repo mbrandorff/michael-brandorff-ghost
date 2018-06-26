@@ -1,21 +1,132 @@
 .postpage {
-	.post-content {
-		max-width: 1200px;
+	.post-timestamp {
+		position: relative;
+		top: -2.5em;
+	}
+	.post-header {
+		max-width: 900px;
+		width: 100%;
+		margin: 0;
+		
+		background: #fff;
 
-		h1, h2, h3, h4, h5, h6, p, figcaption {
-			max-width: 90%;
+		text-align: center;
+
+		.post-title {
+			margin: 1em auto 0em;
+
+			color: #333;
+			font-size: 5rem;
+			text-transform: uppercase;
+			word-spacing: -0.1em;
+			line-height: 1;
+		}
+	}
+	.post-content {
+		max-width: 900px;
+		width: 100%;
+		padding: 1rem;
+
+		h1, h2, h3, h4, h5, h6, p, figure {
+			padding: 0 3rem;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		h1, h2, h3, h4, h5, h6, p, figure {
-			margin: 2em auto;
+		h1, h2, h3, h4, h5, h6, p, figure, blockquote {
+			margin: 3.5rem auto;
+		}
+		blockquote {
+			padding: 0 3rem 0 1.5rem;
+			border-left: $color 0.5rem solid;
+
+			p {
+				font-size: 1.5rem;
+			}
+		}
+		h1 {
+			font-size: 5rem;
+			margin: 1.5em auto;
+			text-align: justify;
+		}
+		h2 {
+			font-size: 4rem;
+			margin: 1.5em auto;
+			text-align: justify;
+		}
+		h3 {
+			font-size: 3rem;
+			margin: 1.5em auto;
+			text-align: justify;
+		}
+		h4 {
+			font-size: 2.5rem;
+			margin: 1.5em auto;
+			text-align: justify;
+		}
+		h5, h6 {
+			font-size: 2rem;
+			margin: 1.5em auto;
+			text-align: justify;
 		}
 		p {
+			max-width: 900px;
+			font-size: 1.8rem;
 			text-align: justify;
 			color: #666;
+			line-height: 1.75;
 		}
-	}
-	.post-card-content {
-		justify-content: flex-start;
+		img {
+			position: relative;
+			left: -5%;
+			width: 110%;
+			max-width: 110%;
+		}
+		small {
+			font-size: 1.2rem;
+			vertical-align: top;
+		}
+		hr {
+			display: block;
+			height: 0;
+			margin: 4.5rem auto 3rem auto;
+
+			border: 0;
+
+			text-align: center;
+
+			overflow: visible;
+
+			&::before {
+				content: '...';
+				display: inline-block;
+				margin-left: 1rem;
+				position: relative;
+				top: -30px;
+
+				font-weight: 400;
+				font-size: 4rem;
+				letter-spacing: 1rem;
+				color: rgba(0, 0, 0, .5);
+			}
+		}
+
+		hr + p, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+			&::first-letter {
+				display: block;
+				position: relative;
+				float: left;
+				padding-right: 0.7rem;
+				padding-top: 1rem;
+				margin-left: -0.5rem;
+				margin-right: 0.5rem;
+				margin-bottom: -1rem;
+
+				font-size: 6.5rem;
+				letter-spacing: -0.5rem;
+				line-height: .83;
+				color: #222;
+				font-weight: bold;
+			}
+		}
 	}
 }
