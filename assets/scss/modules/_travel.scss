@@ -5,10 +5,10 @@
 		flex-direction: column;
 		justify-content: center;
 		flex: 0 0 100%;
-		min-height: calc(100vh - 2em);
+		min-height: calc(100vh - 2rem);
 
-		border-top: 1em solid #fff;
-		border-bottom: 1em solid #fff;
+		border-top: 1rem solid #fff;
+		border-bottom: 1rem solid #fff;
 
 		background: #333;
 
@@ -20,7 +20,7 @@
 			content: "";
 			position: absolute;
 			top: 0;
-			left: calc(-400% + 1em);
+			left: calc(-400% + 1rem);
 			width: 700%;
 			height: 100%;
 
