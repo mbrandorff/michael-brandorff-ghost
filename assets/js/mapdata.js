@@ -961,10 +961,10 @@ var simplemaps_worldmap_mapdata={
       url: "/australia-14-west-coast/"
     },
     "2": {
-      lat: 47.268,
-      lng: 11.391,
-      name: "Austria",
-      url: "/austria-17/"
+      lat: 29.024,
+      lng: -13.642,
+      name: "Lanzarote",
+      url: "/lanzarote-18"
     },
     "3": {
       lat: -37.818,
@@ -977,6 +977,18 @@ var simplemaps_worldmap_mapdata={
       lng: 133.881,
       name: "Outback",
       url: "/australia-14-outback/"
+    },
+    "5": {
+      lat: -33.995,
+      lng: 22.575,
+      name: "South Africa's Garden Route",
+      url: "/south-africa-17"
+    },
+    "6": {
+      lat: -29.582,
+      lng: 28.247,
+      name: "Wild Coast & Lesotho",
+      url: "/south-africa-18"
     }
   },
   labels: {},

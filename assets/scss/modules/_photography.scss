@@ -15,10 +15,10 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: 1em;
-			right: calc(-400% + 1em);
+			top: 1rem;
+			right: calc(-400% + 1rem);
 			width: 400%;
-			height: calc(100% - 2em);
+			height: calc(100% - 2rem);
 
 			background: #333;
 
@@ -33,7 +33,7 @@
 			height: 100%;
 			z-index: 2;
 
-			border: 1em solid #fff;
+			border: 1rem solid #fff;
 
 			transition: all 250ms;
 		}
