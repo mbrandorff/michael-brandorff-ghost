@@ -26,22 +26,18 @@
 		width: 100%;
 		padding: 1rem;
 
-		.kg-card-markdown {
-			max-width: 900px;
-			margin: 0 auto;
-		}
-
-		h1, h2, h3, h4, h5, h6, p, figure {
-			padding: 0 3rem;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		h1, h2, h3, h4, h5, h6, p, figure, blockquote {
+		h1, h2, h3, h4, h5, h6, 
+		p, 
+		figure, 
+		blockquote {
+			padding: 0;
+			max-width: 75rem;
 			margin: 3.5rem auto;
 		}
 		blockquote {
 			padding: 0 3rem 0 1.5rem;
 			border-left: $color 0.5rem solid;
+			max-width: 77rem;
 
 			p {
 				font-size: 1.5rem;
@@ -73,17 +69,13 @@
 			text-align: justify;
 		}
 		p {
-			max-width: 900px;
 			font-size: 1.8rem;
 			text-align: justify;
 			color: #666;
 			line-height: 1.75;
 		}
 		img {
-			position: relative;
-			left: -5%;
-			width: 110%;
-			max-width: 110%;
+			
 		}
 		small {
 			font-size: 1.2rem;
@@ -131,6 +123,16 @@
 				color: #222;
 				font-weight: bold;
 			}
+		}
+
+		.kg-width-wide {
+			max-width: 100rem;
+			padding: 0;
+		}
+		.kg-width-full {
+			max-width: 100%;
+			width: 100%;
+			padding: 0;
 		}
 	}
 }
