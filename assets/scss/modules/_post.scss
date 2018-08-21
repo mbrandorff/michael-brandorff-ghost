@@ -77,9 +77,11 @@
 		img {
 			
 		}
-		small {
-			font-size: 1.2rem;
-			vertical-align: top;
+		small, figcaption {
+			color: #666;
+			font-size: 1.4rem;
+			line-height: 1;
+			padding-top: 1rem;
 		}
 		hr {
 			display: block;
