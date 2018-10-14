@@ -53,3 +53,11 @@
 .content-wrapper a {
   @extend .linkhover;
 }
+
+.kg-image-card a.fancy-box {
+  &::before {
+    display: none;
+    
+    transition: none;
+  }
+}
