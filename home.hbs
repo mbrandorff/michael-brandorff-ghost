@@ -53,6 +53,16 @@
 				</section>
 				{{/post}}
 			{{/get}}
+			{{!-- The big email subscribe modal content --}}
+			{{#if @labs.subscribers}}
+			<div id="subscribe" class="about-subscribe">
+				<div class="subscribe-content">
+					<h3>Stay up to date!</h3>
+					<p class="subscribe-description">Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+					{{subscribe_form placeholder="iwantyour@soul.com"}}
+				</div>
+			</div>
+			{{/if}}
 			<section class="about-insta">
 				<div class="description">
 					<h3>Instagram</h3>
