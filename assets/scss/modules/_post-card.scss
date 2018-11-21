@@ -51,14 +51,15 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 
 	//box-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
 .post-timestamp {
 	position: relative;
-	top: 2.5em;
+	margin-top: 2.5em;
+	margin-bottom: 5em;
 
 	text-align: center;
 }
@@ -111,24 +112,28 @@
 	margin: 0;
 	width: 90%;
 	z-index: 12;
+	margin-top: 7.5em;
 
 	text-align: center;
 
 	transition: all 250ms;
 }
 h2.post-card-title {
+	position: relative;
 	display: inline-block;
 	padding: 1em 2em;
 	margin: 0;
 	width: 100%;
 	
-	background: #fff;
+	background: $c-post-title-bg;
 
 	color: #333;
 	font-size: 3em;
 	text-transform: uppercase;
 	word-spacing: -0.1em;
 	line-height: 1;
+
+	transition: background-color 0.35s;
 	
 	a {
 		color: #333;
@@ -145,7 +150,7 @@ h2.post-card-title {
 		z-index: -100;
 		width: 100%;
 		height: 100%;
-		background: #000;
+		background: transparent;
 		content: '';
 		transition: opacity 0.35s;
 		box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
@@ -156,9 +161,8 @@ h2.post-card-title {
 	position: relative;
 	left: 10%;
 	padding: 1em;
-	z-index: 13;
 	width: 80%;
-	top: 2.5em;
+	margin-top: 2.5em;
 
 	background: #fff;
 
@@ -215,7 +219,10 @@ h2.post-card-title {
 	.post-card-title::before {
 		opacity: 0;
 	}
-	~ .post-card-excerpt {
+	.post-card-title {
+		background: rgba(255, 255, 255, 1);
+	}
+	.post-card-excerpt {
 		opacity: 1;
 		transform: scale3d(1,1,1);
 	}

@@ -10,12 +10,6 @@
 	<article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
 		<div class="post-card-content">
 
-			<div class="post-timestamp">
-				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-					<p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
-				</time>
-			</div>
-
 			<header class="post-card-header">
 				<h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
 			</header>
@@ -23,6 +17,12 @@
 			<section class="post-card-excerpt">
 				{{excerpt words="33"}}
 			</section>
+
+			<div class="post-timestamp">
+				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+					<p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
+				</time>
+			</div>
 
 			{{#if feature_image}}
 			<img class="post-card-photo" src="{{feature_image}}">

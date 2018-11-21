@@ -9,19 +9,20 @@
 	<article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
 		<div class="post-card-content">
 
+			<header class="post-card-header">
+				<h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
+				<section class="post-card-excerpt">
+					{{excerpt words="33"}}
+				</section>
+			</header>
+
+			
+
 			<div class="post-timestamp">
 				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
 					<p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
 				</time>
 			</div>
-
-			<header class="post-card-header">
-				<h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
-			</header>
-
-			<section class="post-card-excerpt">
-				{{excerpt words="33"}}
-			</section>
 
 			{{#if feature_image}}
 			<img class="post-card-photo" src="{{feature_image}}">
@@ -64,7 +65,7 @@
 				var feed = new Instafeed({
 					get: 'user',
 					userId: '254974762',
-					accessToken: '254974762.1677ed0.46fc2d80728b408babdbe0f3f82e69c2',
+					accessToken: '254974762.1677ed0.ce6fbf0264fd4bc584aa57d0bd131f54',
 					limit: '6'
 				});
 				feed.run();
