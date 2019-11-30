@@ -3,7 +3,7 @@
 	{{navigation}}
 </header>
 
-<main class="site-main photography">
+<main class="site-main people">
 
 	{{#foreach posts}}
 
@@ -41,11 +41,11 @@
 	</article>
 
 	{{#if @first}}
-	<article class="site-cblock cblock-photography">
+	<article class="site-cblock cblock-people">
 		<div class="site-cblock-content">
-		{{#get "posts" slug="photography" as |post|}}
+		{{#get "posts" slug="people" as |post|}}
 			{{#post}}
-			<section class="content-wrapper photography-bio">
+			<section class="content-wrapper people-bio">
 
 				{{content}}
 

@@ -3,16 +3,16 @@
 	{{navigation}}
 </header>
 
-<main class="site-main travel">
+<main class="site-main nature">
 
 	{{#foreach posts}}
 
 	{{#if @first}}
-	<article class="site-cblock cblock-travel">
+	<article class="site-cblock cblock-nature">
 		<div class="site-cblock-content">
-		{{#get "posts" slug="travel" as |post|}}
+		{{#get "posts" slug="nature" as |post|}}
 			{{#post}}
-			<section class="content-wrapper travel-bio">
+			<section class="content-wrapper nature-bio">
 
 				{{content}}
 
@@ -22,7 +22,7 @@
 		</div>
 	</article>
 
-	<h1 class="travel-recent" id="recent-posts">Recent Posts about my Travels</h1>
+	<h1 class="nature-recent" id="recent-posts">Recent Posts about my Travels</h1>
 	{{/if}}
 	
 	<article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">

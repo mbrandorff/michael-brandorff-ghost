@@ -1,10 +1,14 @@
-.photography {
+.site-main.nature {
+
 	.site-cblock {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		flex: 0 0 50%;
-		min-height: 90vh;
+		flex: 0 0 100%;
+		min-height: calc(100vh - 2rem);
+
+		border-top: 1rem solid #fff;
+		border-bottom: 1rem solid #fff;
 
 		background: #333;
 
@@ -15,27 +19,14 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: 1rem;
-			right: calc(-400% + 1rem);
-			width: 400%;
-			height: calc(100% - 2rem);
+			top: 0;
+			left: calc(-400% + 1rem);
+			width: 700%;
+			height: 100%;
 
 			background: #333;
 
 			z-index: 3;
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 2;
-
-			border: 1rem solid #fff;
-
-			transition: all 250ms;
 		}
 	}
 
@@ -43,7 +34,7 @@
 		flex: 0 0 100%;
 	}
 
-	.travel-recent {
+	.nature-recent {
 		width: 100%;
 		margin: 1em 0 1em 0;
 
@@ -53,7 +44,7 @@
 		font-size: 2rem;
 	}
 
-	.travel-bio p {
+	.nature-bio p {
 		max-width: 500px;
 		margin: 1.5em auto;
 	}

@@ -54,7 +54,6 @@
 				{{/post}}
 			{{/get}}
 			{{!-- The big email subscribe modal content --}}
-			{{#if @labs.subscribers}}
 			<div id="subscribe" class="about-subscribe">
 				<div class="subscribe-content">
 					<h3>Stay up to date!</h3>
@@ -62,7 +61,6 @@
 					{{subscribe_form placeholder="iwantyour@soul.com"}}
 				</div>
 			</div>
-			{{/if}}
 			<section class="about-insta">
 				<div class="description">
 					<h3>Instagram</h3>
@@ -75,7 +73,7 @@
 				var feed = new Instafeed({
 					get: 'user',
 					userId: '254974762',
-					accessToken: '254974762.1677ed0.ce6fbf0264fd4bc584aa57d0bd131f54',
+					accessToken: '254974762.1677ed0.fe1a1d176f204711a84abad73310f165',
 					limit: '6'
 				});
 				feed.run();
