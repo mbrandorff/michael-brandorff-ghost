@@ -1,5 +1,5 @@
-.postpage {
-	.post-timestamp {
+.post {
+	.timestamp {
 		position: relative;
 		top: -2.5em;
 	}
@@ -7,6 +7,8 @@
 		max-width: 900px;
 		width: 100%;
 		margin: 0;
+		height: 80vh;
+		overflow: visible;
 		
 		background: #fff;
 
@@ -21,7 +23,20 @@
 			word-spacing: -0.1em;
 			line-height: 1;
 		}
+
+		.post-header-content {
+			overflow: hidden;
+		}
 	}
+	.post-header:hover {
+		~ .post-header-photo {
+			transform: perspective(1000px) translate3d(0,0,0px);
+		}
+		.post-title::before {
+			opacity: 1;
+		}
+	}
+
 	.post-content {
 		width: 100%;
 		padding: 1rem;

@@ -29,11 +29,11 @@
 	{{{body}}}
 	
 	{{!-- The footer at the very bottom of the screen --}}
+	{{#if pagination}}
 	<div class="site-pagination">
-		{{#if pagination}}
 		{{{pagination}}}
-		{{/if}}
 	</div>
+	{{/if}}
 
 	<footer class="site-footer">
 		<a href="/impressum/">Impressum</a> | <a href="/data-protection-policy/">Data Protection Policy</a>

@@ -4,9 +4,6 @@
 
 Development with:
 
-* Sasslib Sublime Build Plugin
-* Autoprefixer Sublime Plugin (run on css save)
-
-ToDo:
-
-* Git init + push
+* Prepros
+* Local Ghost Install
+* Push to GitHub master to deploy to Heroku

@@ -17,19 +17,6 @@ html, body {
 	justify-content: space-around;
 	align-items: center;
 }
-.site-cblock {
-	height: auto;
-	position: relative;
-	width: 50%;
-	overflow: hidden;
-	padding: 1em;
-
-	text-align: center;
-}
-.site-cblock-content {
-	position: relative;
-	z-index: 3;
-}
 
 .site-pagination {
 	text-align: center;
@@ -85,8 +72,8 @@ html, body {
 .site-header,
 .site-footer,
 .site-pagination {
-	max-width: 1920px;
-	padding: 0 1em;
+	max-width: 3840px;
+	padding: 0;
 	margin: 0 auto;
 }
 

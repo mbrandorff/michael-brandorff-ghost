@@ -10,24 +10,27 @@ into the {body} of the default.hbs template --}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-<main class="site-main site-main--post postpage">
-	<section class="post-card post-head flex-fullwidth">
-		<div class="post-card-content">
+<main class="site-main site-main--post post">
+
+	<section class="post-header flex-fullwidth">
+		<div class="post-header-content">
 
 			{{#if feature_image}}
-			<img class="post-card-photo" src="{{feature_image}}">
+			<img class="post-header-photo" src="{{feature_image}}">
 			{{/if}}
 			
 		</div>
-		<div class="post-timestamp">
-			<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+		<div class="post-timestamp timestamp">
+			<time class="timestamp-date" datetime="{{date format='YYYY-MM-DD'}}">
 				<p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
 			</time>
 		</div>
 	</section>
-	<header class="post-header">
+
+	<header class="post-heading">
 		<h1 class="post-title">{{title}}</h1>
 	</header>
+	
 	<section class="content-wrapper post-content">
 		{{content}}
 	</section>

@@ -6,65 +6,67 @@
 <main class="site-main home">
 
 	{{#foreach posts}}
-	<article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
-		<div class="post-card-content">
 
-			<header class="post-card-header">
-				<h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
-				<section class="post-card-excerpt">
+	<article class="postpreview postpreview--{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+		<div class="postpreview-content">
+
+			<header class="postpreview-header">
+				<h2 class="postpreview-title"><a href="{{url}}">{{title}}</a></h2>
+
+				{{#if excerpt}}
+				<section class="postpreview-excerpt">
 					{{excerpt words="33"}}
 				</section>
+				{{/if}}
 			</header>
 
-			
-
-			<div class="post-timestamp">
-				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+			<div class="postpreview-timestamp timestamp">
+				<time class="timestamp-date" datetime="{{date format='YYYY-MM-DD'}}">
 					<p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
 				</time>
 			</div>
 
 			{{#if feature_image}}
-			<img class="post-card-photo" src="{{feature_image}}">
+			<img class="postpreview-photo" src="{{feature_image}}">
 			{{/if}}
 			
-			<footer class="post-card-meta">
+			<footer class="postpreview-meta meta">
 
-				{{#if primary_tag}}
-					<span class="post-tag"><i class="fas fa-tags"></i> {{primary_tag.name}}</span>
+				{{#if tags}}
+					<span class="meta-tag"><i class="fas fa-tags"></i> {{tags autolink="false"}}</span>
 				{{/if}}
 
-				<span class="post-reading-time"><i class="fas fa-stopwatch"></i> {{reading_time minute="1 min" minutes="% min"}}</span>
+				<span class="meta-reading-time"><i class="fas fa-stopwatch"></i> {{reading_time minute="1 min" minutes="% min"}}</span>
 
 			</footer>
 		</div>
 	</article>
 
 	{{#if @first}}
-	<article class="site-cblock cblock-about" id="about">
-		<div class="site-cblock-content">
+	<article class="cblock cblock--about about" id="about">
+		<div class="cblock-content">
 			
-			{{#get "posts" slug="home" as |post|}}
-				{{#post}}
-				<section class="content-wrapper about-bio">
+			{{#get "pages" slug="home" as |post|}}
+			{{#post}}
+			<section class="content-wrapper about-bio">
 
-					{{content}}
+				{{content}}
 
-				</section>
-				{{/post}}
+			</section>
+			{{/post}}
 			{{/get}}
 			{{!-- The big email subscribe modal content --}}
-			<div id="subscribe" class="about-subscribe">
+			<div id="subscribe" class="content-wrapper about-subscribe">
 				<div class="subscribe-content">
 					<h3>Stay up to date!</h3>
 					<p class="subscribe-description">Get all the latest &amp; greatest posts delivered straight to your inbox</p>
 					{{subscribe_form placeholder="iwantyour@soul.com"}}
 				</div>
 			</div>
-			<section class="about-insta">
+			<section class="content-wrapper about-insta">
 				<div class="description">
 					<h3>Instagram</h3>
-					<p><a class="linkhover" href="https://www.instagram.com/travellingwithsandyfeet/">@travellingwithsandyfeet</a> / <a class="linkhover" href="https://www.instagram.com/explore/tags/travellingwithsandyfeet/">#travellingwithsandyfeet</a></p>
+					<p><a class="linkhover" href="https://www.instagram.com/michaelbrandorff/">@michaelbrandorff</a> / <a class="linkhover" href="https://www.instagram.com/explore/tags/michaelbrandorff/">#michaelbrandorff</a></p>
 				</div>
 				<div id="instafeed" class="instafeed">
 

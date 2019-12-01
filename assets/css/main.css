@@ -464,18 +464,6 @@ html, body {
   -ms-flex-align: center;
   align-items: center; }
 
-.site-cblock {
-  height: auto;
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-  padding: 1em;
-  text-align: center; }
-
-.site-cblock-content {
-  position: relative;
-  z-index: 3; }
-
 .site-pagination {
   text-align: center;
   text-transform: uppercase; }
@@ -518,8 +506,8 @@ html, body {
 .site-header,
 .site-footer,
 .site-pagination {
-  max-width: 1920px;
-  padding: 0 1em;
+  max-width: 3840px;
+  padding: 0;
   margin: 0 auto; }
 
 .flex-fullwidth {
@@ -527,132 +515,47 @@ html, body {
   -ms-flex: 0 0 100% !important;
   flex: 0 0 100% !important; }
 
-.about-bio p {
+.home .about-bio p {
   margin: 0.5em auto 1.5em;
   max-width: 475px;
   font-size: 0.9em; }
 
-.about-subscribe {
+.home .about-subscribe {
   font-size: 0.9em; }
-  .about-subscribe h3 {
+  .home .about-subscribe h3 {
     margin: 2em 0 0; }
-  .about-subscribe p {
+  .home .about-subscribe p {
     margin: 0.5em auto;
     max-width: 475px; }
-  .about-subscribe form {
+  .home .about-subscribe form {
     color: #333; }
-    .about-subscribe form input.subscribe-email {
+    .home .about-subscribe form input.subscribe-email {
       padding: 0.5em 0.75em; }
-    .about-subscribe form button {
+    .home .about-subscribe form button {
       padding: 0.25em 0.5em;
       margin: 0;
       margin-top: 0.5em; }
 
-.about-insta {
+.home .about-insta {
   text-align: center; }
-  .about-insta h3 {
+  .home .about-insta h3 {
     margin: 2em 0 0; }
-  .about-insta p {
+  .home .about-insta p {
     margin: 0.5em 0 1.3em;
     font-size: 0.9em; }
 
-.home {
-  color: #fff; }
-  .home .post-card.post-0 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%; }
-    .home .post-card.post-0 .post-card-photo {
-      height: 100vh; }
-  .home .post-card.post-2,
-  .home .post-card.post-5 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-    height: 130vh; }
-    .home .post-card.post-2 .post-card-photo,
-    .home .post-card.post-5 .post-card-photo {
-      height: 130vh; }
-  .home .site-cblock {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    height: 90vh;
-    overflow: visible;
-    background: #333; }
-    .home .site-cblock::before {
-      content: "";
-      position: absolute;
-      top: 1rem;
-      left: calc(-400% + 1rem);
-      width: 400%;
-      height: calc(100% - 2rem);
-      background: #333;
-      z-index: 3; }
-    .home .site-cblock::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      border: 1rem solid #fff;
-      -webkit-transition: all 250ms;
-      -o-transition: all 250ms;
-      transition: all 250ms; }
-  .home .site-cblock-content {
-    position: relative;
-    z-index: 4;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%; }
+.home .postpreview.postpreview--0 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%; }
+  .home .postpreview.postpreview--0 .postpreview-photo {
+    height: 100vh; }
 
-.site-main.nature .site-cblock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  min-height: calc(100vh - 2rem);
-  border-top: 1rem solid #fff;
-  border-bottom: 1rem solid #fff;
-  background: #333;
-  color: #fff;
-  overflow: visible; }
-  .site-main.nature .site-cblock::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: calc(-400% + 1rem);
-    width: 700%;
-    height: 100%;
-    background: #333;
-    z-index: 3; }
-
-.site-main.nature .site-cblock-content {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
+.home .postpreview.postpreview--2,
+.home .postpreview.postpreview--5 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%; }
 
 .site-main.nature .nature-recent {
   width: 100%;
@@ -666,51 +569,6 @@ html, body {
   max-width: 500px;
   margin: 1.5em auto; }
 
-.people .site-cblock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  min-height: 90vh;
-  background: #333;
-  color: #fff;
-  overflow: visible; }
-  .people .site-cblock::before {
-    content: "";
-    position: absolute;
-    top: 1rem;
-    right: calc(-400% + 1rem);
-    width: 400%;
-    height: calc(100% - 2rem);
-    background: #333;
-    z-index: 3; }
-  .people .site-cblock::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    border: 1rem solid #fff;
-    -webkit-transition: all 250ms;
-    -o-transition: all 250ms;
-    transition: all 250ms; }
-
-.people .site-cblock-content {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
-
 .people .people-recent {
   width: 100%;
   margin: 1em 0 1em 0;
@@ -723,78 +581,89 @@ html, body {
   max-width: 500px;
   margin: 1.5em auto; }
 
-.postpage .post-timestamp {
+.post .timestamp {
   position: relative;
   top: -2.5em; }
 
-.postpage .post-header {
+.post .post-header {
   max-width: 900px;
   width: 100%;
   margin: 0;
+  height: 80vh;
+  overflow: visible;
   background: #fff;
   text-align: center; }
-  .postpage .post-header .post-title {
+  .post .post-header .post-title {
     margin: 1em auto 0em;
     color: #333;
     font-size: 5rem;
     text-transform: uppercase;
     word-spacing: -0.1em;
     line-height: 1; }
+  .post .post-header .post-header-content {
+    overflow: hidden; }
 
-.postpage .post-content {
+.post .post-header:hover ~ .post-header-photo {
+  -webkit-transform: perspective(1000px) translate3d(0, 0, 0px);
+  transform: perspective(1000px) translate3d(0, 0, 0px); }
+
+.post .post-header:hover .post-title::before {
+  opacity: 1; }
+
+.post .post-content {
   width: 100%;
   padding: 1rem; }
-  .postpage .post-content h1, .postpage .post-content h2, .postpage .post-content h3, .postpage .post-content h4, .postpage .post-content h5, .postpage .post-content h6,
-  .postpage .post-content p,
-  .postpage .post-content figure,
-  .postpage .post-content blockquote {
+  .post .post-content h1, .post .post-content h2, .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6,
+  .post .post-content p,
+  .post .post-content figure,
+  .post .post-content blockquote {
     padding: 0;
     max-width: 75rem;
     margin: 3.5rem auto; }
-  .postpage .post-content blockquote {
+  .post .post-content blockquote {
     padding: 0 3rem 0 1.5rem;
     border-left: #FFD228 0.5rem solid;
     max-width: 77rem; }
-    .postpage .post-content blockquote p {
+    .post .post-content blockquote p {
       font-size: 1.5rem; }
-  .postpage .post-content h1 {
+  .post .post-content h1 {
     font-size: 5rem;
     margin: 1.5em auto;
     text-align: justify; }
-  .postpage .post-content h2 {
+  .post .post-content h2 {
     font-size: 4rem;
     margin: 1.5em auto;
     text-align: justify; }
-  .postpage .post-content h3 {
+  .post .post-content h3 {
     font-size: 3rem;
     margin: 1.5em auto;
     text-align: justify; }
-  .postpage .post-content h4 {
+  .post .post-content h4 {
     font-size: 2.5rem;
     margin: 1.5em auto;
     text-align: justify; }
-  .postpage .post-content h5, .postpage .post-content h6 {
+  .post .post-content h5, .post .post-content h6 {
     font-size: 2rem;
     margin: 1.5em auto;
     text-align: justify; }
-  .postpage .post-content p {
+  .post .post-content p {
     font-size: 1.8rem;
     text-align: justify;
     color: #666;
     line-height: 1.75; }
-  .postpage .post-content small, .postpage .post-content figcaption {
+  .post .post-content small, .post .post-content figcaption {
     color: #666;
     font-size: 1.4rem;
     line-height: 1;
     padding-top: 1rem; }
-  .postpage .post-content hr {
+  .post .post-content hr {
     display: block;
     height: 0;
     margin: 4.5rem auto 3rem auto;
     border: 0;
     text-align: center;
     overflow: visible; }
-    .postpage .post-content hr::before {
+    .post .post-content hr::before {
       content: '...';
       display: inline-block;
       margin-left: 1rem;
@@ -804,7 +673,7 @@ html, body {
       font-size: 4rem;
       letter-spacing: 1rem;
       color: rgba(0, 0, 0, 0.5); }
-  .postpage .post-content hr + p::first-letter, .postpage .post-content h1 + p::first-letter, .postpage .post-content h2 + p::first-letter, .postpage .post-content h3 + p::first-letter, .postpage .post-content h4 + p::first-letter, .postpage .post-content h5 + p::first-letter, .postpage .post-content h6 + p::first-letter {
+  .post .post-content hr + p::first-letter, .post .post-content h1 + p::first-letter, .post .post-content h2 + p::first-letter, .post .post-content h3 + p::first-letter, .post .post-content h4 + p::first-letter, .post .post-content h5 + p::first-letter, .post .post-content h6 + p::first-letter {
     display: block;
     position: relative;
     float: left;
@@ -818,20 +687,20 @@ html, body {
     line-height: .83;
     color: #222;
     font-weight: bold; }
-  .postpage .post-content .kg-width-wide {
+  .post .post-content .kg-width-wide {
     max-width: 100rem;
     padding: 0; }
-  .postpage .post-content .kg-width-full {
+  .post .post-content .kg-width-full {
     max-width: 100%;
     width: 100%;
     padding: 0; }
 
-.post-card {
+.postpreview {
   position: relative;
   width: 50%;
   overflow: hidden;
   padding: 1rem; }
-  .post-card::before {
+  .postpreview::before {
     content: "";
     position: absolute;
     top: 0;
@@ -843,7 +712,7 @@ html, body {
     -webkit-transition: all 250ms;
     -o-transition: all 250ms;
     transition: all 250ms; }
-  .post-card::after {
+  .postpreview::after {
     content: "";
     position: absolute;
     top: 0;
@@ -856,7 +725,7 @@ html, body {
     -o-transition: all 250ms;
     transition: all 250ms; }
 
-.post-card-photo {
+.postpreview-photo {
   position: absolute;
   left: 0;
   top: 0;
@@ -873,7 +742,7 @@ html, body {
   -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
   transform: perspective(1000px) translate3d(0, 0, 0); }
 
-.post-card-content {
+.postpreview-content {
   position: relative;
   height: 100%;
   display: -webkit-box;
@@ -887,13 +756,13 @@ html, body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.post-timestamp {
+.timestamp {
   position: relative;
   margin-top: 2.5em;
   margin-bottom: 5em;
   text-align: center; }
 
-.post-date {
+.timestamp-date {
   position: relative;
   display: block;
   width: 6.5em;
@@ -903,11 +772,11 @@ html, body {
   border-radius: 50%;
   background: #fff;
   font-size: 0.8em; }
-  .post-date::before {
+  .timestamp-date::before {
     content: "";
     display: block;
     padding-top: 100%; }
-  .post-date p {
+  .timestamp-date p {
     margin: 0;
     padding: 1.5em 0 0;
     position: absolute;
@@ -920,11 +789,11 @@ html, body {
     text-transform: uppercase;
     line-height: 2em;
     font-size: 1em; }
-    .post-date p span {
+    .timestamp-date p span {
       display: block;
       font-size: 2.5em; }
 
-.post-card-header {
+.postpreview-header {
   position: relative;
   left: 5%;
   margin: 0;
@@ -936,7 +805,7 @@ html, body {
   -o-transition: all 250ms;
   transition: all 250ms; }
 
-h2.post-card-title {
+h2.postpreview-title {
   position: relative;
   display: inline-block;
   padding: 1em 2em;
@@ -951,11 +820,11 @@ h2.post-card-title {
   -webkit-transition: background-color 0.35s;
   -o-transition: background-color 0.35s;
   transition: background-color 0.35s; }
-  h2.post-card-title a {
+  h2.postpreview-title a {
     color: #333; }
-    h2.post-card-title a:hover {
+    h2.postpreview-title a:hover {
       text-decoration: none; }
-  h2.post-card-title::before {
+  h2.postpreview-title::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -970,7 +839,7 @@ h2.post-card-title {
     -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2); }
 
-.post-card-excerpt {
+.postpreview-excerpt {
   position: relative;
   left: 10%;
   padding: 1em;
@@ -990,14 +859,14 @@ h2.post-card-title {
   -webkit-transform: scale3d(0.9, 0.9, 1);
   transform: scale3d(0.9, 0.9, 1); }
 
-.post-card-meta {
+.postpreview-meta {
   position: absolute;
   bottom: 2.5em;
   width: 100%;
   z-index: 13;
   text-align: center; }
 
-.post-tag {
+.meta-tag {
   display: inline-block;
   margin-right: 1em;
   color: #fff;
@@ -1005,51 +874,89 @@ h2.post-card-title {
   line-height: 1em;
   vertical-align: bottom; }
 
-.post-reading-time {
+.meta-reading-time {
   display: inline-block;
   color: #fff;
   text-align: right;
   line-height: 1em;
   vertical-align: bottom; }
 
-.post-card-header:hover ~ .post-card-photo {
+.postpreview-header:hover ~ .postpreview-photo {
   -webkit-transform: perspective(1000px) translate3d(0, 0, 40px);
   transform: perspective(1000px) translate3d(0, 0, 40px); }
 
-.post-card-header:hover .post-card-title::before {
+.postpreview-header:hover .postpreview-title::before {
   opacity: 0; }
 
-.post-card-header:hover .post-card-title {
+.postpreview-header:hover .postpreview-title {
   background: white; }
 
-.post-card-header:hover .post-card-excerpt {
+.postpreview-header:hover .postpreview-excerpt {
   opacity: 1;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1); }
 
-.postpage .post-card-header:hover ~ .post-card-photo {
-  -webkit-transform: perspective(1000px) translate3d(0, 0, 0px);
-  transform: perspective(1000px) translate3d(0, 0, 0px); }
-
-.postpage .post-card-header:hover .post-card-title::before {
-  opacity: 1; }
-
-.postpage .post-card {
-  height: 80vh;
-  overflow: visible; }
-  .postpage .post-card .post-card-content {
-    overflow: hidden; }
-
-.post-card {
+.postpreview {
   height: 90vh;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%; }
 
-.post-card-photo {
+.postpreview-photo {
   height: 90vh; }
 
-.linkhover, .about-bio p a, .linkhover--small, .linkhover--dark, .site-main--post a,
+.cblock {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  height: 90vh;
+  background: #333;
+  color: #fff;
+  text-align: center; }
+  .cblock .cblock-content {
+    position: relative;
+    z-index: 4;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1rem solid #fff;
+    border-left-width: 0px; }
+
+.cblock.cblock--nature .cblock-content #map {
+  width: 100%; }
+
+.cblock.cblock--people {
+  min-height: 90vh; }
+  .cblock.cblock--people .cblock-content {
+    border-left: 1rem solid #fff;
+    border-right: 0px; }
+
+.linkhover, .home .about-bio p a, .linkhover--small, .linkhover--dark, .site-main--post a,
 .site-pagination a,
 .content-wrapper a {
   position: relative;
@@ -1060,7 +967,7 @@ h2.post-card-title {
   -o-transition: all .2s;
   transition: all .2s;
   white-space: nowrap; }
-  .linkhover::before, .about-bio p a::before, .linkhover--small::before, .linkhover--dark::before, .site-main--post a::before,
+  .linkhover::before, .home .about-bio p a::before, .linkhover--small::before, .linkhover--dark::before, .site-main--post a::before,
   .site-pagination a::before,
   .content-wrapper a::before {
     content: '';
@@ -1073,11 +980,11 @@ h2.post-card-title {
     -webkit-transition: all .2s;
     -o-transition: all .2s;
     transition: all .2s; }
-  .linkhover:hover, .about-bio p a:hover, .linkhover--small:hover, .linkhover--dark:hover, .site-main--post a:hover,
+  .linkhover:hover, .home .about-bio p a:hover, .linkhover--small:hover, .linkhover--dark:hover, .site-main--post a:hover,
   .site-pagination a:hover,
   .content-wrapper a:hover {
     text-decoration: none; }
-  .linkhover:hover::before, .about-bio p a:hover::before, .linkhover--small:hover::before, .linkhover--dark:hover::before, .site-main--post a:hover::before,
+  .linkhover:hover::before, .home .about-bio p a:hover::before, .linkhover--small:hover::before, .linkhover--dark:hover::before, .site-main--post a:hover::before,
   .site-pagination a:hover::before,
   .content-wrapper a:hover::before {
     width: 100%;
@@ -1143,41 +1050,41 @@ h2.post-card-title {
   text-align: center; }
 
 @media only screen and (max-width: 1150px) {
-  .home .site-cblock {
+  .home .cblock {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
-  .post-card-header, .post-timestamp {
+  .postpreview-header, .timestamp {
     font-size: 0.8em; }
-  .post-card-excerpt {
+  .postpreview-excerpt {
     font-size: 0.9em;
     top: 2em; } }
 
 @media only screen and (max-width: 875px) {
-  .post-card, .site-cblock, .photography .site-cblock {
+  .postpreview, .cblock, .photography .cblock {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
-  .home .site-cblock {
+  .home .cblock {
     min-height: 90vh;
     height: auto; }
   .site-main {
     padding: 0; }
-  .photography .post-card {
+  .photography .postpreview {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2; }
-  .photography .site-cblock {
+  .photography .cblock {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1; }
-  h2.post-card-title {
+  h2.postpreview-title {
     padding: 1em 0.5em; } }
 
 @media only screen and (max-width: 565px) {
-  .post-card-header, .post-timestamp {
+  .postpreview-header, .post-timestamp {
     font-size: 0.6em; }
-  .post-card-excerpt {
+  .postpreview-excerpt {
     font-size: 0.7em;
     top: 2em; } }
 

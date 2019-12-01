@@ -16,12 +16,13 @@ $c-post-title-bg: rgba(255, 255, 255, 0.85);
 
 @import "layout";
 
-@import "modules/about";
+@import "modules/home";
 @import "modules/nature";
 @import "modules/people";
 @import "modules/post";
 
-@import "modules/post-card";
+@import "modules/postpreview";
+@import "modules/cblock";
 
 @import "modules/links";
 @import "modules/navigation";

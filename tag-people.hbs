@@ -7,51 +7,54 @@
 
 	{{#foreach posts}}
 
-	<article class="post-card post-{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
-		<div class="post-card-content">
+	<article class="postpreview postpreview--{{@index}} {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+		<div class="postpreview-content">
 
-			<header class="post-card-header">
-				<h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
+			<header class="postpreview-header">
+				<h2 class="postpreview-title"><a href="{{url}}">{{title}}</a></h2>
+				
+				{{#if excerpt}}
+				<section class="postpreview-excerpt">
+					{{excerpt words="33"}}
+				</section>
+				{{/if}}
 			</header>
-			
-			<section class="post-card-excerpt">
-				{{excerpt words="33"}}
-			</section>
 
-			<div class="post-timestamp">
-				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+			<div class="postpreview-timestamp timestamp">
+				<time class="timestamp-date" datetime="{{date format='YYYY-MM-DD'}}">
 					<p><span>{{date format="DD"}}</span>{{date format="MMM"}}</p>
 				</time>
 			</div>
 
 			{{#if feature_image}}
-			<img class="post-card-photo" src="{{feature_image}}">
+			<img class="postpreview-photo" src="{{feature_image}}">
 			{{/if}}
 			
-			<footer class="post-card-meta">
+			<footer class="postpreview-meta meta">
 
-				{{#if primary_tag}}
-					<span class="post-tag"><i class="fas fa-tags"></i> {{primary_tag.name}}</span>
+				{{#if tags}}
+					<span class="meta-tag"><i class="fas fa-tags"></i> {{tags autolink="false"}}</span>
 				{{/if}}
 
-				<span class="post-reading-time"><i class="fas fa-stopwatch"></i> {{reading_time minute="1 min" minutes="% min"}}</span>
+				<span class="meta-reading-time"><i class="fas fa-stopwatch"></i> {{reading_time minute="1 min" minutes="% min"}}</span>
 
 			</footer>
 		</div>
 	</article>
 
 	{{#if @first}}
-	<article class="site-cblock cblock-people">
-		<div class="site-cblock-content">
-		{{#get "posts" slug="people" as |post|}}
-			{{#post}}
-			<section class="content-wrapper people-bio">
+	<article class="cblock cblock--people" id="people">
+		<div class="cblock-content">
+			
+			{{#get "pages" slug="people" as |post|}}
+				{{#post}}
+				<section class="content-wrapper">
 
-				{{content}}
+					{{content}}
 
-			</section>
-			{{/post}}
-		{{/get}}
+				</section>
+				{{/post}}
+			{{/get}}
 		</div>
 	</article>
 	{{/if}}

@@ -1,0 +1,46 @@
+.cblock {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 0 0 50%;
+	height: 90vh;
+
+	background: #333;
+
+	color: #fff;
+	text-align: center;
+	
+	.cblock-content {
+		position: relative;
+		z-index: 4;
+		flex: 0 0 100%;
+		overflow: visible;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		border: 1rem solid #fff;
+		border-left-width: 0px;
+	}
+}
+
+.cblock.cblock--nature {
+
+	.cblock-content {
+
+		#map {
+			width: 100%;
+		}
+	}
+}
+
+.cblock.cblock--people {
+	min-height: 90vh;
+
+	.cblock-content {
+		border-left: 1rem solid #fff;
+		border-right: 0px;
+	}
+}
