@@ -1,0 +1,163 @@
+:root {
+  /* Colours */
+  --blue: #3eb0ef;
+  --green: #a4d037;
+  --purple: #ad26b4;
+  --yellow: #fecd35;
+  --red: #f05230;
+  --darkgrey: #15171A;
+  --midgrey: #738a94;
+  --lightgrey: #c5d2d9;
+  --whitegrey: #e5eff5;
+  --pink: #fa3a57;
+  --brown: #a3821a;
+  --darkmode: color(var(--darkgrey) l(+2%)); }
+
+.subscribe-form {
+  margin: 1.5em 0;
+  padding: 6.5vw 7vw 8vw;
+  border: color(var(--lightgrey) l(10%)) 1px solid;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(color(var(--whitegrey) l(6%))), to(color(var(--whitegrey) l(4%))));
+  background: -webkit-linear-gradient(color(var(--whitegrey) l(6%)), color(var(--whitegrey) l(4%)));
+  background: -o-linear-gradient(color(var(--whitegrey) l(6%)), color(var(--whitegrey) l(4%)));
+  background: linear-gradient(color(var(--whitegrey) l(6%)), color(var(--whitegrey) l(4%)));
+  border-radius: 3px; }
+
+.subscribe-form-title {
+  margin: 0 0 3px 0;
+  padding: 0;
+  color: var(--darkgrey);
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 600; }
+
+.subscribe-form-description {
+  margin-bottom: 0.2em 0 1em;
+  color: var(--midgrey);
+  font-size: 2.1rem;
+  line-height: 1.55em; }
+
+.subscribe-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 460px; }
+
+.subscribe-form .form-group {
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.subscribe-email {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border: color(var(--lightgrey) l(7%)) 1px solid;
+  color: var(--midgrey);
+  font-size: 1.8rem;
+  line-height: 1em;
+  font-weight: normal;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  border-radius: 5px;
+  -webkit-transition: border-color 0.15s linear;
+  -o-transition: border-color 0.15s linear;
+  transition: border-color 0.15s linear;
+  -webkit-appearance: none; }
+
+.subscribe-email:focus {
+  outline: 0;
+  border-color: color(var(--lightgrey) l(-2%)); }
+
+.subscribe-form button {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 0 20px;
+  height: 43px;
+  outline: none;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 39px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+.subscribe-form .button-loader,
+.subscribe-form .message-success,
+.subscribe-form .message-error {
+  display: none; }
+
+.subscribe-form .loading .button-content {
+  visibility: hidden; }
+
+.subscribe-form .loading .button-loader {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  margin-left: -19px;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7); }
+
+.subscribe-form .button-loader svg path,
+.subscribe-form .button-loader svg rect {
+  fill: #fff; }
+
+.subscribe-form .success .message-success,
+.subscribe-form .invalid .message-error,
+.subscribe-form .error .message-error {
+  margin: 1em auto 0;
+  max-width: 400px;
+  color: var(--red);
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  text-align: center; }
+
+.subscribe-form .success .message-success {
+  display: block;
+  color: color(var(--green) l(-5%)); }
+
+.subscribe-form .invalid .message-error,
+.subscribe-form .error .message-error {
+  display: block; }
+
+@media (max-width: 650px) {
+  .subscribe-form-title {
+    font-size: 2.4rem; }
+  .subscribe-form-description {
+    font-size: 1.6rem; } }
+
+@media (max-width: 500px) {
+  .subscribe-form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .subscribe-form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+  .subscribe-form button {
+    margin: 10px 0 0 0;
+    width: 100%; } }

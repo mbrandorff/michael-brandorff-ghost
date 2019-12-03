@@ -22,13 +22,14 @@
 		align-items: center;
 
 		border: 1rem solid #fff;
-		border-left-width: 0px;
+		border-left-width: 0;
 	}
 }
 
 .cblock.cblock--nature {
 
 	.cblock-content {
+		border-top-width: 0;
 
 		#map {
 			width: 100%;
@@ -40,6 +41,7 @@
 	min-height: 90vh;
 
 	.cblock-content {
+		border-top-width: 0;
 		border-left: 1rem solid #fff;
 		border-right: 0px;
 	}

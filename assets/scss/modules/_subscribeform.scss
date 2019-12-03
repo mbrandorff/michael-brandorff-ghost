@@ -1,0 +1,99 @@
+.about-subscribe {
+	font-size: 0.9em;
+
+	h3 {
+		margin: 2em 0 0;
+	}
+	p {
+		margin: 0.5em auto;
+		max-width: 475px;
+	}
+
+	form {
+		color: #333;
+
+		input.subscribe-email {
+			padding: 0.5em 0.75em;
+		}
+		button {
+			padding: 0.25em 0.5em;
+			margin: 0;
+		}
+	}
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-form form {
+
+}
+
+.subscribe-form .form-group {
+
+}
+
+.subscribe-email {
+	border: none;
+
+	user-select: text;
+
+	-webkit-appearance: none;
+}
+
+.subscribe-email:focus {
+	outline: 0;
+}
+
+.subscribe-form button {
+	position: relative;
+	outline: none;
+	border: none;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.subscribe-form button:active,
+.subscribe-form button:focus {
+	
+}
+
+.subscribe-form .button-loader,
+.subscribe-form .message-success,
+.subscribe-form .message-error {
+	display: none;
+}
+
+.subscribe-form .loading .button-content {
+	visibility: hidden;
+}
+
+.subscribe-form .loading .button-loader {
+	position: absolute;
+	top: -0.35em;
+	left: 50%;
+	display: inline-block;
+	margin-left: -19px;
+	transform: scale(0.8);
+}
+
+.subscribe-form .button-loader svg path,
+.subscribe-form .button-loader svg rect {
+	fill: #333;
+}
+
+.subscribe-form .success .message-success,
+.subscribe-form .invalid .message-error,
+.subscribe-form .error .message-error {
+	color: $color;
+}
+
+.subscribe-form .success .message-success {
+	display: block;
+}
+
+.subscribe-form .invalid .message-error,
+.subscribe-form .error .message-error {
+	display: block;
+}

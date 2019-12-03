@@ -23,11 +23,12 @@ $c-post-title-bg: rgba(255, 255, 255, 0.85);
 
 @import "modules/postpreview";
 @import "modules/cblock";
+@import "modules/subscribeform";
 
 @import "modules/links";
 @import "modules/navigation";
 @import "modules/instafeed";
-@import "modules/_koenig.scss";
+@import "modules/koenig";
 
 @import "queries";
 
