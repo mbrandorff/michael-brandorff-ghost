@@ -1,9 +1,9 @@
 {
     "name": "michael-brandorff-ghost",
     "description": "A WIP Ghost Theme for my Blog.",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "engines": {
-        "ghost": ">=1.2.0"
+        "ghost": ">=3.0.0"
     },
     "author": {
         "name": "Michael Brandorff",
