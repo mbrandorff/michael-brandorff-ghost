@@ -30,6 +30,13 @@ into the {body} of the default.hbs template --}}
 	<header class="post-heading">
 		<h1 class="post-title">{{title}}</h1>
 	</header>
+
+	{{#if excerpt}}
+	<section class="post-excerpt">
+		<p>{{excerpt words="50"}}</p>
+		<hr />
+	</section>
+	{{/if}}
 	
 	<section class="content-wrapper post-content">
 		{{content}}

@@ -2,7 +2,8 @@
 	.timestamp {
 		position: relative;
 		top: 0;
-		margin-bottom: 2.5em;
+		margin-bottom: 1.5rem;
+		margin-top: 2rem;
 	}
 	.post-header {
 		max-width: none;
@@ -39,16 +40,56 @@
 		}
 	}
 
+	.post-excerpt {
+		width: 100%;
+		padding: 0 1rem;
+
+		p, 
+		hr {
+			max-width: $content-width;
+			padding: 0;
+			margin: 2.5rem auto;
+
+			font-size: 1.8rem;
+			line-height: 1.75;
+			text-align: justify;
+			color: #738a94;
+		}
+		hr {
+			display: block;
+			height: 0;
+
+			border: 0;
+
+			text-align: center;
+
+			overflow: visible;
+
+			&::before {
+				content: '...';
+				display: inline-block;
+				margin-left: 1rem;
+				position: relative;
+				top: -30px;
+
+				font-weight: 400;
+				font-size: 4rem;
+				letter-spacing: 1rem;
+				color: rgba(0, 0, 0, .5);
+			}
+		}
+	}
+
 	.post-content {
 		width: 100%;
-		padding: 1rem;
+		padding: 0 1rem 1rem;
 
 		h1, h2, h3, h4, h5, h6, 
 		p, 
 		figure, 
 		blockquote {
 			padding: 0;
-			max-width: 75rem;
+			max-width: $content-width;
 			margin: 3.5rem auto;
 		}
 		blockquote {
@@ -125,7 +166,14 @@
 			}
 		}
 
-		hr + p, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+		hr + p, 
+		h1 + p, 
+		h2 + p, 
+		h3 + p, 
+		h4 + p, 
+		h5 + p, 
+		h6 + p,
+		p:first-child {
 			&::first-letter {
 				display: block;
 				position: relative;
@@ -145,7 +193,7 @@
 		}
 
 		.kg-width-wide {
-			max-width: 100rem;
+			max-width: $content-width-wide;
 			padding: 0;
 		}
 		.kg-width-full {

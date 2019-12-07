@@ -1,5 +1,5 @@
 .linkhover {
-  position:relative;
+  position: relative;
 
   font-size: 1em;
   color: $color;
@@ -54,7 +54,19 @@
   @extend .linkhover;
 }
 
-.kg-image-card a.fancy-box {
+a.link--reset,
+a.kg-bookmark-container {
+  position: inherit;
+  display: inherit;
+
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+
+  transition: none;
+
+  white-space: inherit;
+
   &::before {
     display: none;
     
