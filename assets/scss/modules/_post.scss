@@ -92,13 +92,20 @@
 			max-width: $content-width;
 			margin: 3.5rem auto;
 		}
+		figcaption {
+			text-align: justify;
+			max-width: $content-width;
+			margin: 0 auto;
+		}
 		blockquote {
 			padding: 0 3rem 0 1.5rem;
 			border-left: $color 0.5rem solid;
 			max-width: 77rem;
 
 			p {
-				font-size: 1.5rem;
+				font-size: 1.8rem;
+				line-height: 1.75;
+				text-align: justify;
 			}
 		}
 		h1 {

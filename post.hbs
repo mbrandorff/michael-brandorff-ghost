@@ -16,7 +16,7 @@ into the {body} of the default.hbs template --}}
 		<div class="post-header-content">
 
 			{{#if feature_image}}
-			<img class="post-header-photo" src="{{feature_image}}">
+			<img class="post-header-photo lazyload" data-src="{{feature_image}}">
 			{{/if}}
 			
 		</div>
